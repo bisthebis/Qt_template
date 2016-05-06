@@ -6,13 +6,13 @@ project(Qt_Template)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # Instruct CMake to run moc automatically when needed.
 set(CMAKE_AUTOMOC ON)
-set(AUTOUIC ON)
+set(CMAKE_AUTOUIC ON)
 
 # Find the QtWidgets library
 find_package(Qt5Widgets)
 
 # Tell CMake to create the helloworld executable
-add_executable(App 
+add_executable(App
 main.cpp
 main_window.cpp
 main_window.h
